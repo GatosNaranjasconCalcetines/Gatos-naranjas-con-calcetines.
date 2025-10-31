@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Baloo 2', Arial, sans-serif;
+    background: linear-gradient(135deg, #fff7ae 0%, #fdc886 80%);
+    color: #50342b;
+}
+
+header {
+    background: linear-gradient(90deg, #ffab76 60%, #ffef78 100%);
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #fd6c4d;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fd6c4d;
+}
+
+.slogan {
+    font-size: 1.2rem;
+    color: #7b4d2a;
+    margin-top: .5rem;
+}
+
+nav {
+    background: #fff6e5;
+    padding: .5rem 0;
+    text-align: center;
+    border-bottom: 2px solid #fbc96f;
+}
+nav a {
+    color: #fd6c4d;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .2s;
+}
+nav a:hover {
+    color: #a22c08;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    color: #fd6c4d;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+article {
+    background: #fff7e0;
+    border: 2px solid #fdc886;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px #ffe7c4aa;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+article a {
+    color: #ff9600;
+    text-decoration: underline;
+}
+
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+.galeria-fotos img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #fd6c4d;
+    background: #fff;
+    box-shadow: 0 2px 10px #fdc88688;
+}
+
+.creditos {
+    font-size: 0.95rem;
+    color: #a0793d;
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #ffab76;
+    color: #fff;
+    border-top: 3px solid #fd6c4d;
+    font-size: 1.1rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .galeria-fotos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .galeria-fotos img {
+        width: 90vw;
+        height: 180px;
+    }
+}
